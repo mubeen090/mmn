@@ -1,0 +1,140 @@
+/* CourseCard.module.css */
+
+/* Styles for Course Card Container */
+.course_card {
+  display: flex;
+  padding: 10px 10px 20px 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 12px;
+  border: 1px solid #f1f1f1;
+  background: #fafafa;
+  gap: 10px;
+}
+
+/* Styles for Course Image Container */
+.course_image_container {
+  display: flex;
+  width: 340px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* Styles for Course Image */
+.course_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Styles for Course Heading */
+.heading {
+  overflow: hidden;
+  color: #080808;
+  font-feature-settings: "clig" off, "liga" off;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/* Styles for Course Stats Container */
+.stats_contianer {
+  display: flex;
+  padding: 10px 6px 26px 6px;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Styles for Individual Stat Items */
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Styles for Button and Rating Container */
+.btn_rating {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styles for the Button */
+.btn {
+  display: flex;
+  padding: 10px 16px 10px 24px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10px;
+  background: #080808;
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+  text-transform: capitalize;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+  .course_card {
+    width: 100%;
+  }
+
+  .course_image_container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .course_image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .heading {
+    font-size: 14px;
+    white-space: wrap;
+  }
+
+  .stats_contianer {
+    display: none;
+  }
+
+  .btn_rating {
+    height: 32px;
+  }
+
+  .btn {
+    padding: 8px 12px 8px 16px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+.view_more_btn {
+  background-color: purple; /* Set the background color to purple */
+  color: white; /* Set the text color to white */
+  padding: 10px 20px; /* Adjust padding for the button */
+  border: none; /* Remove button border */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Adjust the font size */
+  font-weight: bold; /* Add bold font weight */
+}
+
+/* Style for button hover effect (optional) */
+.view_more_btn:hover {
+  background-color: darkpurple; /* Change background color on hover */
+}
+

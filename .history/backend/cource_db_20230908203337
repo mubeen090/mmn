@@ -1,0 +1,26 @@
+import axios from 'axios';
+
+// ...
+
+const CourseList = () => {
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    axios.get('/api/courses').then((response) => {
+      setCourses(response.data);
+    });
+  }, []);
+
+  return (
+    <div className={styles.course_list}>
+      {courses.map((course) => (
+        <CourseCard key={course.slug} course={course} />
+      ))}
+      <Link href="/view-more">
+        <button className={styles.view_more_btn}>View More</button>
+      </Link>
+    </div>
+  );
+};
+
+// ...
